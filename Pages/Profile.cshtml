@@ -1,0 +1,27 @@
+@page
+@model ProfileModel
+@{
+    ViewData["Title"] = "Edit your Profile";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to edit your user profile.</p>
+
+
+<form method="post">
+
+
+    <input asp-for="SiteUser.FirstName" placeholder="Change First Name" />
+
+
+    <input asp-for="SiteUser.LastName" placeholder="Change Last Name" />
+
+    <input asp-for="SiteUser.Email" placeholder="Change Email" />
+
+    <input type="submit" value="Save" />
+
+
+
+
+
+</form>
